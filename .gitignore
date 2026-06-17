@@ -5,6 +5,9 @@ __pycache__/
 venv/
 env/
 
+# Dados locais (favoritos salvos em execução)
+data/
+
 # Node / React
 node_modules/
 dist/

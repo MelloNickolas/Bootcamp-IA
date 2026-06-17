@@ -97,6 +97,8 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "Arraiá com estilo! 🎉 Separa o look pra cair na quadrilha com muito "
             "charme. Passa na {nome}! 🌽",
+            "Bora pro arraiá? 🌽 Xadrez, peças leves e muito charme te esperam "
+            "na {nome}! 🎉",
         ],
         hashtags=["#festajunina", "#arraia", "#modafeminina", "#virtuaumodas",
                   "#macatuba"],
@@ -107,6 +109,8 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "É agora! 🔖 Liquidação de inverno na {nome}: aquela peça que você "
             "namorava com um precinho especial. Corre que é por tempo limitado! 🛍️",
+            "Liquida, liquida! 🛍️ As peças de inverno da {nome} estão com "
+            "preços especiais. Aproveita antes que acabe! 🔖",
         ],
         hashtags=["#liquidacao", "#promocao", "#saldao", "#virtuaumodas",
                   "#macatuba"],
@@ -117,6 +121,8 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "Hoje o dia é de quem faz a {nome} acontecer: VOCÊ! 💛 Obrigada por "
             "tanto carinho. Passa aqui que tem novidade esperando por você! 🤝",
+            "Feliz Dia do Cliente! 💛 Você é o motivo de tudo isso. Vem "
+            "comemorar com a gente na {nome}! 🤝",
         ],
         hashtags=["#diadocliente", "#obrigada", "#modafeminina", "#virtuaumodas",
                   "#macatuba"],
@@ -127,6 +133,8 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "A estação das flores chegou! 🌸 Cores, leveza e peças novas pra "
             "renovar o guarda-roupa. Vem ver a coleção de primavera da {nome}! 🌼",
+            "Primavera é renovação! 🌼 Que tal cores novas no seu guarda-roupa? "
+            "Te esperamos na {nome}. 🌸",
         ],
         hashtags=["#primavera", "#novacolecao", "#modafeminina", "#virtuaumodas"],
         ideia_foto="Peças leves e coloridas com flores ao fundo.",
@@ -136,6 +144,8 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "BLACK FRIDAY chegando na {nome}! 🖤 Os melhores looks com os "
             "melhores preços do ano. Já separa sua listinha! 🔥",
+            "Chegou a hora! 🔥 Black Friday na {nome} com descontos imperdíveis. "
+            "Não vai ficar de fora, né? 🖤",
         ],
         hashtags=["#blackfriday", "#promocao", "#ofertas", "#virtuaumodas",
                   "#macatuba"],
@@ -146,10 +156,81 @@ OCASIOES: list[Ocasiao] = [
         legendas=[
             "O Natal está chegando! 🎄 Presenteie quem você ama (e você também!) "
             "com looks cheios de estilo. Te esperamos na {nome}! 🎁",
+            "Que tal um presente que ela vai amar usar? 🎁 No Natal, a {nome} "
+            "tem o look perfeito. Vem conferir! 🎄",
         ],
         hashtags=["#natal", "#presentedenatal", "#modafeminina", "#virtuaumodas",
                   "#macatuba"],
         ideia_foto="Look festivo em vermelho/dourado, clima natalino.",
+    ),
+    Ocasiao(
+        "Ano Novo", "comemorativa", 1, 1, "🎆✨",
+        legendas=[
+            "Ano novo, look novo! 🎆 Comece 2026 com estilo e confiança. A "
+            "{nome} tem a peça perfeita pra sua virada. ✨",
+            "Que o novo ano venha cheio de estilo! ✨ Vem renovar o guarda-roupa "
+            "na {nome}. 🎆",
+        ],
+        hashtags=["#anonovo", "#reveillon", "#modafeminina", "#virtuaumodas",
+                  "#macatuba"],
+        ideia_foto="Look branco/dourado elegante, clima de festa.",
+    ),
+    Ocasiao(
+        "Carnaval", "comemorativa", 2, None, "🎭🎉",
+        legendas=[
+            "Carnaval chegando! 🎭 Separa o look pra cair na folia com muito "
+            "charme e conforto. Passa na {nome}! 🎉",
+        ],
+        hashtags=["#carnaval", "#folia", "#modafeminina", "#virtuaumodas",
+                  "#macatuba"],
+        ideia_foto="Peças leves e coloridas, clima alegre e descontraído.",
+    ),
+    Ocasiao(
+        "Início do Outono", "estacao", 3, 20, "🍂🧣",
+        legendas=[
+            "O outono chegou! 🍂 Hora de aquecer o look com peças de meia "
+            "estação cheias de estilo. Vem ver as novidades da {nome}! 🧣",
+        ],
+        hashtags=["#outono", "#meiaestacao", "#modafeminina", "#virtuaumodas"],
+        ideia_foto="Tons terrosos, cardigãs e peças de meia estação.",
+    ),
+    Ocasiao(
+        "Páscoa", "comemorativa", 4, None, "🐰🍫",
+        legendas=[
+            "Páscoa é tempo de carinho! 🐰 Que tal se presentear com um look "
+            "novo? Te esperamos na {nome}. 🍫",
+        ],
+        hashtags=["#pascoa", "#modafeminina", "#virtuaumodas", "#macatuba"],
+        ideia_foto="Look em tons pastéis, clima leve e delicado.",
+    ),
+    Ocasiao(
+        "Outubro Rosa", "comemorativa", 10, None, "🎀💗",
+        legendas=[
+            "Outubro Rosa 🎀 Cuidar de si é um ato de amor. A {nome} apoia a "
+            "campanha de conscientização e prevenção do câncer de mama. Cuide-se, "
+            "você é importante. 💗",
+        ],
+        hashtags=["#outubrorosa", "#prevencao", "#autocuidado", "#virtuaumodas"],
+        ideia_foto="Detalhe em rosa, mensagem de conscientização (tom respeitoso).",
+    ),
+    Ocasiao(
+        "Início do Verão", "estacao", 12, 21, "☀️👙",
+        legendas=[
+            "Verão chegando! ☀️ Peças fresquinhas, leves e cheias de estilo pra "
+            "curtir a estação mais quente do ano. Vem ver a coleção da {nome}! 👗",
+        ],
+        hashtags=["#verao", "#colecaoverao", "#modafeminina", "#virtuaumodas"],
+        ideia_foto="Peças leves e coloridas, clima de sol e leveza.",
+    ),
+    Ocasiao(
+        "Aniversário da Virtuau Modas", "loja", 5, 28, "🎂🎉",
+        legendas=[
+            "Hoje é dia de festa: a {nome} está de aniversário! 🎂 Obrigada a "
+            "cada cliente que faz parte dessa história. Tem novidade e mimo "
+            "esperando por você! 🎉",
+        ],
+        hashtags=["#aniversario", "#virtuaumodas", "#macatuba", "#modafeminina"],
+        ideia_foto="Foto comemorativa da loja, clima de celebração.",
     ),
 ]
 
@@ -234,6 +315,93 @@ def proximas_ocasioes(a_partir_de: date | None = None, dias: int = 90) -> list[d
 def sugestao_livre() -> dict:
     """Uma ideia de post 'coringa' para qualquer dia."""
     return gerar_post(random.choice(TEMAS_LIVRES))
+
+
+DIAS_SEMANA = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
+
+
+def plano_semana(dias: int = 7, inicio: date | None = None) -> list[dict]:
+    """Monta um plano de conteúdo para os próximos `dias`, um post por dia.
+
+    Em dias com data comemorativa/sazonal, usa a sugestão dela; nos demais,
+    rodízio das ideias 'coringa' (novidade, look do dia, prova social), para
+    garantir constância nas publicações sem repetir sempre o mesmo.
+    """
+    inicio = inicio or date.today()
+    ocasioes = {o["data"]: o for o in proximas_ocasioes(inicio, dias=dias + 1)}
+
+    plano = []
+    for i in range(dias):
+        d = inicio + timedelta(days=i)
+        chave = d.isoformat()
+        if chave in ocasioes:
+            post = ocasioes[chave]
+        else:
+            post = gerar_post(TEMAS_LIVRES[i % len(TEMAS_LIVRES)])
+            post["data"] = chave
+            post["dias_ate"] = i
+        post["dia_semana"] = DIAS_SEMANA[d.weekday()]
+        plano.append(post)
+    return plano
+
+
+# Palavras pequenas que não viram hashtag
+_STOPWORDS = {"de", "da", "do", "das", "dos", "e", "o", "a", "os", "as", "para",
+              "pra", "com", "em", "no", "na", "um", "uma"}
+
+
+def _hashtags_de_tema(tema: str) -> list[str]:
+    """Cria hashtags a partir das palavras do tema digitado."""
+    import unicodedata
+    tags = []
+    for palavra in tema.lower().split():
+        limpa = "".join(c for c in unicodedata.normalize("NFKD", palavra)
+                        if c.isalnum() and not unicodedata.combining(c))
+        if limpa and limpa not in _STOPWORDS and len(limpa) > 2:
+            tags.append(f"#{limpa}")
+    base = ["#modafeminina", "#virtuaumodas", "#macatuba"]
+    return list(dict.fromkeys(tags + base))[:6]
+
+
+def gerar_de_tema(tema: str) -> dict:
+    """Gera um post a partir de um tema livre digitado pela usuária.
+
+    Versão por modelos (sem IA). A função fica isolada para, no futuro, um
+    modelo de linguagem escrever um texto totalmente personalizado a partir
+    do tema, sem mudar o resto da aplicação.
+    """
+    tema = (tema or "").strip()
+    if not tema:
+        return {"erro": "Digite um tema para gerar o post."}
+
+    # Se houver chave de API, usa a IA de verdade (Claude). Senão, modelos prontos.
+    from backend import ia
+    if ia.disponivel():
+        try:
+            return ia.gerar_post(tema, MARCA)
+        except Exception:
+            pass  # qualquer falha cai no modelo pronto abaixo
+
+    modelos = [
+        "✨ Olha que novidade: {tema}! Vem conferir de pertinho na {nome}. "
+        "Você vai amar! 💛",
+        "👗 Bora falar de {tema}? Na {nome} tem opção pra você arrasar. "
+        "Passa aqui e escolha a sua! ✨",
+        "💫 {tema_cap} é com a gente! Conforto, estilo e você na {nome}. "
+        "Te esperamos! 🛍️",
+    ]
+    legenda = random.choice(modelos).format(
+        tema=tema, tema_cap=tema.capitalize(), nome=MARCA["nome"],
+    )
+    return {
+        "tema": tema.capitalize(),
+        "tipo": "livre",
+        "legenda": legenda,
+        "hashtags": " ".join(_hashtags_de_tema(tema)),
+        "ideia_foto": f"Foto que destaque “{tema}”, no estilo aconchegante da marca.",
+        "melhor_horario": random.choice(["12h", "18h", "19h", "20h"]),
+        "fonte": "modelo",
+    }
 
 
 if __name__ == "__main__":

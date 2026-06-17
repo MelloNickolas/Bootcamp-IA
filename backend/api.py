@@ -6,10 +6,10 @@ de post e as ideias "coringa".
 
 Rodar:  ./.venv/Scripts/python.exe -m uvicorn backend.api:app --reload
 """
-from fastapi import FastAPI
+from fastapi import Body, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend import marketing
+from backend import favoritos, marketing
 
 app = FastAPI(title="Virtuau Marketing API", version="1.0")
 
@@ -43,3 +43,40 @@ def ocasioes(dias: int = 120):
 def sugestao_livre():
     """Uma ideia de post 'coringa' para qualquer dia."""
     return marketing.sugestao_livre()
+
+
+@app.get("/gerar-tema")
+def gerar_tema(tema: str = ""):
+    """Gera um post a partir de um tema livre digitado pela usuária."""
+    return marketing.gerar_de_tema(tema)
+
+
+@app.get("/ia-status")
+def ia_status():
+    """Informa se a IA de verdade (Claude) está ligada."""
+    from backend import ia
+    return {"ia_ligada": ia.disponivel()}
+
+
+@app.get("/plano-semana")
+def plano_semana(dias: int = 7):
+    """Plano de conteúdo para os próximos dias (um post por dia)."""
+    return marketing.plano_semana(dias=dias)
+
+
+@app.get("/favoritos")
+def listar_favoritos():
+    """Lista os posts salvos como favoritos."""
+    return favoritos.listar()
+
+
+@app.post("/favoritos")
+def salvar_favorito(post: dict = Body(...)):
+    """Salva um post nos favoritos."""
+    return favoritos.adicionar(post)
+
+
+@app.delete("/favoritos/{fav_id}")
+def remover_favorito(fav_id: int):
+    """Remove um favorito pelo id."""
+    return {"removido": favoritos.remover(fav_id)}

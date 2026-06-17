@@ -38,6 +38,20 @@ npm run dev
 
 Depois abra no navegador: **http://localhost:5173**
 
+### (Opcional) Ligar a IA de verdade (Claude)
+
+Por padrão os textos usam modelos prontos (sem custo). Para que o **Claude**
+escreva os posts, defina a chave de API **antes** de iniciar o cérebro, no
+mesmo terminal:
+
+```powershell
+$env:ANTHROPIC_API_KEY = "sk-ant-..."   # sua chave
+.\.venv\Scripts\python.exe -m uvicorn backend.api:app --port 8000
+```
+
+Com a chave ativa, a tela mostra **✨ IA ativada** e os posts gerados ganham o
+selo **✨ por IA**. A chave é lida do ambiente — nunca fica salva no código.
+
 > Primeira vez? Prepare o ambiente uma única vez:
 > ```powershell
 > # Python
