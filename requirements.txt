@@ -1,0 +1,3 @@
+# API (a "portinha" que liga o site React ao cérebro Python)
+fastapi>=0.115
+uvicorn[standard]>=0.30

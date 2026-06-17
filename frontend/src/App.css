@@ -1,0 +1,209 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+/* Cabeçalho */
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid var(--laranja);
+  color: var(--laranja);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--preto);
+  flex-shrink: 0;
+}
+.topo h1 {
+  font-size: 30px;
+  color: var(--preto);
+  font-weight: 700;
+}
+.subtitulo {
+  color: var(--cinza);
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+/* Bloco "gerar agora" */
+.bloco-livre {
+  background: var(--preto);
+  color: var(--branco);
+  border-radius: 16px;
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.bloco-livre h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.bloco-livre p {
+  color: #cfc7ba;
+  font-size: 14px;
+}
+.btn-gerar {
+  background: var(--laranja);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 13px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.1s, background 0.2s;
+}
+.btn-gerar:hover {
+  background: var(--laranja-claro);
+  transform: translateY(-1px);
+}
+
+.livre-resultado {
+  margin-bottom: 32px;
+}
+.livre-resultado .card {
+  border: 2px solid var(--laranja);
+}
+
+/* Títulos de seção */
+.secao-titulo {
+  font-size: 22px;
+  color: var(--preto);
+  margin-bottom: 18px;
+}
+
+/* Grade de cards */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Card de post */
+.card {
+  background: var(--branco);
+  border: 1px solid var(--bege);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tag {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.contador {
+  font-size: 13px;
+  color: var(--cinza);
+  font-weight: 600;
+}
+.card-tema {
+  font-size: 19px;
+  color: var(--preto);
+  margin-bottom: 2px;
+}
+.card-data {
+  font-size: 13px;
+  color: var(--laranja);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-legenda {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--grafite);
+  margin-bottom: 12px;
+  flex-grow: 1;
+}
+.card-hashtags {
+  font-size: 13px;
+  color: #6b7fb0;
+  margin-bottom: 14px;
+  word-break: break-word;
+}
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--cinza);
+  border-top: 1px solid var(--bege);
+  padding-top: 12px;
+  margin-bottom: 14px;
+}
+.btn-copiar {
+  background: var(--bege);
+  color: var(--preto);
+  border: none;
+  border-radius: 10px;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-copiar:hover {
+  background: var(--laranja);
+  color: #fff;
+}
+
+/* Avisos e estados */
+.aviso-erro {
+  background: #fff4e6;
+  border: 1px solid var(--laranja);
+  color: #9a4a12;
+  padding: 14px 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.aviso-erro code {
+  background: #ffe3c2;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.carregando {
+  color: var(--cinza);
+  padding: 20px 0;
+}
+
+/* Rodapé */
+.rodape {
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 1px solid var(--bege);
+  text-align: center;
+  color: var(--cinza);
+  font-size: 14px;
+}

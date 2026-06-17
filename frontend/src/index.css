@@ -1,0 +1,32 @@
+:root {
+  /* Paleta da marca Virtuau Modas */
+  --laranja: #e2752e;
+  --laranja-claro: #f4a261;
+  --preto: #1a1a1a;
+  --grafite: #2a2a2a;
+  --creme: #faf7f2;
+  --bege: #efe7dc;
+  --branco: #ffffff;
+  --cinza: #8a8276;
+  --verde: #4c9a6a;
+
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--grafite);
+  background: var(--creme);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--creme);
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
